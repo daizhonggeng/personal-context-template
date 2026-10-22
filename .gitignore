@@ -1,0 +1,29 @@
+# 只排除常见本机文件；不能代替提交前的隐私检查
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*.log
+.cache/
+__pycache__/
+.venv/
+
+# 凭据与私密原件应在仓库外保管
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.netrc
+credentials*
+secrets/
+private-local/
+
+# 邮件和大型附件另行保管，只在资料中记录索引
+*.eml
+*.mbox
+*.pst
+*.ost
+attachments/
