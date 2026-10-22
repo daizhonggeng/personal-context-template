@@ -13,11 +13,21 @@ This public repository contains blank templates and guidelines. Create a **priva
 3. Keep detailed records in the relevant subject folders. Use the [inbox](00-收件箱/README.md) for material awaiting classification or confirmation.
 4. Give each AI application access only to the files required for its current task. Follow the [AI access guide](docs/AI接入.md) and check whether the application follows [AGENTS.md](AGENTS.md).
 
-| Core file | Purpose |
-| --- | --- |
-| [PROFILE.md](PROFILE.md) | Concise background, with links to detailed records |
-| [PREFERENCES.md](PREFERENCES.md) | Communication and collaboration preferences |
-| [CURRENT.md](CURRENT.md) | Current priorities, active goals, and constraints |
+## Core summaries and subject folders
+
+Subject folders hold detailed records organized by topic. The three core files contain selected, concise summaries and links, presenting three views of the same knowledge base:
+
+| Core file | Purpose | Relationship to subject records |
+| --- | --- | --- |
+| [PROFILE.md](PROFILE.md) | Who I am | Select relevant, relatively stable background from personal, work, learning, or other records |
+| [PREFERENCES.md](PREFERENCES.md) | How to work with me | Keep confirmed preferences useful across tasks; topic-specific details remain in subject folders |
+| [CURRENT.md](CURRENT.md) | What matters now | Summarize current goals and constraints, link active records, and remove outdated summaries |
+
+This is a many-to-many relationship: one subject can inform several core files, and one core file can reference several subjects. Most details can stay only in subject records. A short fact that needs no detailed record can live only in a core file; do not duplicate it just to fill the structure.
+
+When an authorized detail changes, check any existing core summary within the granted read scope and update its source link and date only within the write authorization. Summaries are maintained deliberately, not automatically extracted from every conversation or folder. Reading a core file does not authorize reading all its linked files; an AI application selects relevant files within the granted scope.
+
+`README.md` is navigation, `AGENTS.md` defines collaboration rules, the inbox holds unprocessed or unconfirmed material, templates provide blank formats, and the archive holds historical records. These are not current personal facts. See the [structure guide](docs/资料结构.md) (in Chinese) for examples and maintenance rules.
 
 The [Chinese directory map](README.md#目录导航) covers 17 life areas, plus an inbox, templates, and an archive. Folder names are optional categories, not evidence about your life. Templates, examples, and unanswered fields are not personal facts.
 
